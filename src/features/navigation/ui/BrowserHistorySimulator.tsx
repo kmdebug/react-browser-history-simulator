@@ -2,6 +2,7 @@ import type { JSX } from 'react';
 import { useBrowserHistory } from '../state/useBrowserHistory';
 import HistoryToolbar from './HistoryToolbar';
 import AddressBar from './AddressBar';
+import PageView from './PageView';
 
 const BrowserHistorySimulator: React.FC = (): JSX.Element => {
   const {
@@ -13,6 +14,8 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
     addressBar,
     setAddressBar,
     navigateTo,
+    present,
+    currentPageTitle,
   } = useBrowserHistory();
 
   return (
@@ -35,6 +38,8 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
 
         <div className="w-16" />
       </div>
+
+      <PageView title={currentPageTitle} url={present} />
     </div>
   );
 };
