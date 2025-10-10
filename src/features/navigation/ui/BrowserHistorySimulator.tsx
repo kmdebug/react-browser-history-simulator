@@ -3,6 +3,7 @@ import { useBrowserHistory } from '../state/useBrowserHistory';
 import HistoryToolbar from './HistoryToolbar';
 import AddressBar from './AddressBar';
 import PageView from './PageView';
+import StacksInspector from './StacksInspector';
 
 const BrowserHistorySimulator: React.FC = (): JSX.Element => {
   const {
@@ -15,7 +16,11 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
     setAddressBar,
     navigateTo,
     present,
+    past,
+    future,
     currentPageTitle,
+    showStacks,
+    setShowStacks,
   } = useBrowserHistory();
 
   return (
@@ -40,6 +45,14 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
       </div>
 
       <PageView title={currentPageTitle} url={present} />
+
+      <StacksInspector
+        checked={showStacks}
+        onToggle={setShowStacks}
+        past={past}
+        present={present}
+        future={future}
+      />
     </div>
   );
 };
