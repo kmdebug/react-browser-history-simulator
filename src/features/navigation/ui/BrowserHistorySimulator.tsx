@@ -24,7 +24,7 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
   } = useBrowserHistory();
 
   return (
-    <div className="gap-4 grid mx-auto p-6 border max-w-4xl text-gray-900">
+    <div className="mx-auto p-6 max-w-4xl text-gray-900 tracking-tight">
       <div className="items-center gap-2 grid grid-cols-[auto_1fr_auto] bg-[#FCF8FA] pr-0 pl-2 rounded-t-lg h-12.5">
         <HistoryToolbar
           hasBack={hasBack}

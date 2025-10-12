@@ -16,7 +16,7 @@ const StacksInspector: React.FC<Props> = ({
   future,
 }): JSX.Element => (
   <>
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center pl-2">
       <label className="flex items-center gap-2 text-sm">
         <input
           type="checkbox"
@@ -29,7 +29,7 @@ const StacksInspector: React.FC<Props> = ({
     </div>
 
     {checked && (
-      <div className="gap-3 grid grid-cols-1 md:grid-cols-3">
+      <div className="gap-3 grid grid-cols-1 md:grid-cols-3 mt-3 pl-2">
         <HistoryColumn title="Past (back stack)" items={past} highlightLast />
         <HistoryColumn title="Present" items={[present]} />
         <HistoryColumn
