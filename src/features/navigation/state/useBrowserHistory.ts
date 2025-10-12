@@ -35,28 +35,28 @@ export function useBrowserHistory() {
   const navigateBack = useCallback(() => {
     if (!hasBack) return;
 
-    setPast((prevPast) => {
-      const nextPast = [...prevPast];
-      const previous = nextPast.pop()!;
-      setFuture((prevFuture) => [...prevFuture, present]);
-      setPresent(previous);
-      setAddressBar(previous);
-      return nextPast;
-    });
-  }, [hasBack, present]);
+    const previous = past[past.length - 1];
+    const nextPast = past.slice(0, -1);
+    const nextFuture = [...future, present];
+
+    setPast(nextPast);
+    setPresent(previous);
+    setFuture(nextFuture);
+    setAddressBar(previous);
+  }, [hasBack, past, future, present]);
 
   const navigateForward = useCallback(() => {
     if (!hasForward) return;
 
-    setFuture((prevFuture) => {
-      const nextFuture = [...prevFuture];
-      const next = nextFuture.pop()!;
-      setPast((prevPast) => [...prevPast, present]);
-      setPresent(next);
-      setAddressBar(next);
-      return nextFuture;
-    });
-  }, [hasForward, present]);
+    const next = future[future.length - 1];
+    const nextFuture = future.slice(0, -1);
+    const nextPast = [...past, present];
+
+    setPast(nextPast);
+    setPresent(next);
+    setFuture(nextFuture);
+    setAddressBar(next);
+  }, [hasForward, past, future, present]);
 
   const navigateHome = useCallback(() => {
     if (present === 'about:blank') return;

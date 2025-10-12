@@ -19,9 +19,10 @@ export default function PageView({
       <p className="my-3">This is a mock page.</p>
 
       <p className="max-w-xl">
-        Type a URL and press <kbd className="px-1 border rounded">Enter</kbd> or
-        click <em>Go</em>. Back/Forward enable only when applicable. Visiting a
-        new page clears the Forward stack—just like a real browser.
+        Type a URL and press{' '}
+        <kbd className="px-1 border rounded select-none">Enter</kbd>. Back and
+        Forward enable only when applicable. Visiting a new page clears the
+        Forward stack like a real browser.
       </p>
     </div>
   );
