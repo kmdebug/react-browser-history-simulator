@@ -24,8 +24,8 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
   } = useBrowserHistory();
 
   return (
-    <div className="gap-4 grid mx-auto p-6 max-w-4xl text-gray-900">
-      <div className="items-center gap-2 grid grid-cols-[auto_1fr_auto] bg-white px-2 py-2 border border-gray-200 rounded-lg">
+    <div className="gap-4 grid mx-auto p-6 border max-w-4xl text-gray-900">
+      <div className="items-center gap-2 grid grid-cols-[auto_1fr_auto] bg-[#FCF8FA] pr-0 pl-2 rounded-t-lg h-12.5">
         <HistoryToolbar
           hasBack={hasBack}
           hasForward={hasForward}
@@ -38,10 +38,7 @@ const BrowserHistorySimulator: React.FC = (): JSX.Element => {
           value={addressBar}
           onChange={setAddressBar}
           onEnter={() => navigateTo(addressBar)}
-          onGo={() => navigateTo(addressBar)}
         />
-
-        <div className="w-16" />
       </div>
 
       <PageView title={currentPageTitle} url={present} />

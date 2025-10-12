@@ -15,12 +15,12 @@ const HistoryToolbar: React.FC<Props> = ({
   onForward,
   onHome,
 }) => (
-  <div className="flex items-center gap-1">
+  <div className="flex items-center gap-1 h-full">
     <button
-      aria-label="Back"
+      aria-label="Click to go back"
       onClick={onBack}
       disabled={!hasBack}
-      className="flex justify-center items-center bg-white hover:bg-gray-50 disabled:opacity-40 border border-gray-200 rounded-md w-6 h-6 text-gray-700 disabled:cursor-not-allowed"
+      className="flex justify-center items-center hover:bg-[#EFEBED] disabled:opacity-40 rounded-full w-8 h-8 text-[#43474E] transition-colors disabled:cursor-not-allowed"
     >
       <svg
         stroke="currentColor"
@@ -40,10 +40,10 @@ const HistoryToolbar: React.FC<Props> = ({
       </svg>
     </button>
     <button
-      aria-label="Forward"
+      aria-label="Click to go forward"
       onClick={onForward}
       disabled={!hasForward}
-      className="flex justify-center items-center bg-white hover:bg-gray-50 disabled:opacity-40 border border-gray-200 rounded-md w-6 h-6 text-gray-700 disabled:cursor-not-allowed"
+      className="flex justify-center items-center hover:bg-[#EFEBED] disabled:opacity-40 rounded-full w-8 h-8 text-[#43474E] transition-colors disabled:cursor-not-allowed"
     >
       <svg
         stroke="currentColor"
@@ -63,9 +63,9 @@ const HistoryToolbar: React.FC<Props> = ({
       </svg>
     </button>
     <button
-      aria-label="Home"
+      aria-label="Open the homepage"
       onClick={onHome}
-      className="flex justify-center items-center bg-white hover:bg-gray-50 border border-gray-200 rounded-md w-6 h-6 text-gray-600"
+      className="flex justify-center items-center hover:bg-[#EFEBED] rounded-full w-8 h-8 text-[#43474E] transition-colors"
     >
       <svg
         stroke="currentColor"
