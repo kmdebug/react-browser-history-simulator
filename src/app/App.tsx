@@ -10,7 +10,6 @@ export default function App(): JSX.Element {
         <div className="flex items-center gap-4">
           <a
             className="text-[#1d1d1d] text-xs hover:underline cursor-pointer"
-            rel="noreferrer"
             href="mailto:kaissar.mouelhi@outlook.com"
           >
             Email
@@ -18,7 +17,7 @@ export default function App(): JSX.Element {
           <a
             className="text-[#1d1d1d] text-xs hover:underline cursor-pointer"
             rel="noreferrer"
-            href=""
+            href="https://github.com/kmdebug/react-browser-history-simulator.git"
             target="_blank"
           >
             GitHub
@@ -39,7 +38,7 @@ export default function App(): JSX.Element {
             href="https://www.kmdebug.dev/"
             target="_blank"
           >
-            Kaissar Mouelhi | Portfolio
+            s Kaissar Mouelhi | Portfolio
           </a>
         </p>
       </footer>

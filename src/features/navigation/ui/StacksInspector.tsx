@@ -24,7 +24,7 @@ const StacksInspector: React.FC<Props> = ({
           onChange={(e) => onToggle(e.target.checked)}
           className="border-gray-300 rounded size-4"
         />
-        Show stacks (for demo)
+        Show stacks
       </label>
     </div>
 
