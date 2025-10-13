@@ -8,8 +8,6 @@ Key goals:
 - Inspect the internal stacks used to implement history.
 - Offer an interactive address bar and page view for experimentation.
 
----
-
 ## Table of Contents
 
 - [Demo](#demo)
@@ -146,7 +144,3 @@ Please follow existing code style, TypeScript typing, and lint rules. Run `npm r
 ## License
 
 This project is provided under the MIT License. See the `LICENSE` file for details.
-
-## Acknowledgements
-
-This project was inspired by educational examples explaining browser navigation and history management. The UI uses Tailwind CSS and Vite for fast iteration.
