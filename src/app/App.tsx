@@ -38,7 +38,7 @@ export default function App(): JSX.Element {
             href="https://www.kmdebug.dev/"
             target="_blank"
           >
-            s Kaissar Mouelhi | Portfolio
+            Kaissar Mouelhi | Portfolio
           </a>
         </p>
       </footer>
