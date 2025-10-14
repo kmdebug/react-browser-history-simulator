@@ -19,7 +19,7 @@ Key goals:
   - [Run (dev)](#run-dev)
   - [Build / Preview](#build--preview)
 - [Project structure](#project-structure)
-- [Design & implementation notes](#design--implementation-notes)
+- [Notes](#notes)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -107,7 +107,7 @@ Other repo files:
 - `tsconfig*.json` - TypeScript configuration
 - `eslint.config.js` - ESLint configuration
 
-## Design & implementation notes
+## Notes
 
 Overview:
 
