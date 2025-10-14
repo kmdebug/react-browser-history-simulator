@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 type Props = {
   hasBack: boolean;
@@ -14,7 +14,7 @@ const HistoryToolbar: React.FC<Props> = ({
   onBack,
   onForward,
   onHome,
-}) => (
+}): JSX.Element => (
   <div className="flex items-center gap-1 h-full">
     <button
       aria-label="Click to go back"

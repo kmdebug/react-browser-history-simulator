@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
-import { toAbsoluteURL } from '../lib/toAbsoluteUrl';
+import { toAbsoluteURL } from '../lib/toAbsoluteURL';
 
 export function useBrowserHistory() {
   const [past, setPast] = useState<string[]>([]);

@@ -1,4 +1,4 @@
-import React from 'react';
+import type { JSX } from 'react';
 
 type Props = {
   value: string;
@@ -6,7 +6,11 @@ type Props = {
   onEnter: () => void;
 };
 
-const AddressBar: React.FC<Props> = ({ value, onChange, onEnter }) => (
+const AddressBar: React.FC<Props> = ({
+  value,
+  onChange,
+  onEnter,
+}): JSX.Element => (
   <div className="flex-1 items-center gap-2 grid grid-cols-[1fr_auto] h-full">
     <input
       value={value}
