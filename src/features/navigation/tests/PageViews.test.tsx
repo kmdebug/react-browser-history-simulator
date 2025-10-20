@@ -4,13 +4,13 @@ import PageView from '../ui/PageView';
 
 describe('PageView', () => {
   it('renders the title and URL', () => {
-    render(<PageView title="Home" url="https://example.com" />);
+    render(<PageView title="Home" url="about:blank" />);
 
     expect(screen.getByText('Home')).toBeInTheDocument();
 
     expect(screen.getByText('URL:')).toBeInTheDocument();
 
-    const code = screen.getByText('https://example.com');
+    const code = screen.getByText('about:blank');
 
     expect(code.tagName.toLowerCase()).toBe('code');
   });
