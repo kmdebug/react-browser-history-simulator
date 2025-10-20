@@ -27,6 +27,11 @@ Key goals:
 
 Run the app locally (see below) and open `http://localhost:5173` in your browser. The UI provides an address bar, navigation toolbar (Back, Forward, Visit), a page view, and a stacks inspector showing the current back/forward stacks.
 
+Live demo (deployed to GitHub Pages):
+
+`https://kmdebug.github.io/react-browser-history-simulator/`  
+(Note: the site will be live after you run `npm run deploy` or when your CI workflow publishes the `gh-pages` branch.)
+
 ## Features
 
 - Interactive address bar to navigate to custom URLs.
