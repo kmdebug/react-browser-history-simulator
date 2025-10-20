@@ -165,4 +165,4 @@ Please follow existing code style, TypeScript typing, and lint rules. Run `npm r
 
 This project is provided under the MIT License. See the `LICENSE` file for details.
 
-Copyright © 2025, Kaissar Mouelhi
+Copyright © 2025, [Kaissar Mouelhi](https://www.kmdebug.dev/, 'Portfolio')
