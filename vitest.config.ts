@@ -10,10 +10,9 @@ export default defineConfig({
     },
   },
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
-    // Per-feature `__tests__/setup.ts` files are used in this repository.
-    // Remove or set `setupFiles` here if you want a global setup file.
     css: true,
+    setupFiles: './src/features/navigation/tests/setup.ts',
   },
 });
