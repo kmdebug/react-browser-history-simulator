@@ -29,7 +29,8 @@ Run the app locally (see below) and open `http://localhost:5173` in your browser
 
 Live demo (deployed to GitHub Pages):
 
-`https://kmdebug.github.io/react-browser-history-simulator/`  
+[React Browser History Simulator](https://kmdebug.github.io/react-browser-history-simulator/ 'Live Demo')
+
 (Note: the site will be live after you run `npm run deploy` or when your CI workflow publishes the `gh-pages` branch.)
 
 ## Features
@@ -170,4 +171,4 @@ Please follow existing code style, TypeScript typing, and lint rules. Run `npm r
 
 This project is provided under the MIT License. See the `LICENSE` file for details.
 
-Copyright © 2025, [Kaissar Mouelhi](https://www.kmdebug.dev/, 'Portfolio')
+Copyright © 2025, [Kaissar Mouelhi](https://www.kmdebug.dev/ 'Portfolio')
