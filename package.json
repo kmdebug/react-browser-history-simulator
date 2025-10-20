@@ -1,5 +1,6 @@
 {
   "name": "react-browser-history-simulator",
+  "homepage": "https://kmdebug.github.io/react-browser-history-simulator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
