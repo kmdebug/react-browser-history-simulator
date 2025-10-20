@@ -22,11 +22,10 @@ Key goals:
 - [Notes](#notes)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Demo
 
-Run the app locally (see below) and open http://localhost:5173 in your browser. The UI provides an address bar, navigation toolbar (Back, Forward, Visit), a page view, and a stacks inspector showing the current back/forward stacks.
+Run the app locally (see below) and open `http://localhost:5173` in your browser. The UI provides an address bar, navigation toolbar (Back, Forward, Visit), a page view, and a stacks inspector showing the current back/forward stacks.
 
 ## Features
 
@@ -66,7 +65,7 @@ Start the dev server (Vite):
 npm run dev
 ```
 
-Open http://localhost:5173
+Open `http://localhost:5173`
 
 ### Build & Preview
 
@@ -84,6 +83,27 @@ Run ESLint across the project:
 ```bash
 npm run lint
 ```
+
+### Testing
+
+This project uses Vitest for unit tests. Tests are organized per-feature. Each feature can provide its own test setup file at `__tests__/setup.ts` next to its tests (for example `src/features/navigation/__tests__/setup.ts`).
+
+Run tests with:
+
+```bash
+npm run test
+```
+
+To run tests once (CI mode):
+
+```bash
+npm run test -- --run
+```
+
+#### Hints
+
+- The Vitest configuration is in `vitest.config.ts` and uses a DOM-like environment. Per-feature `setup.ts` files are picked up manually by tests in those folders.
+- If you add a global test setup file, add it to `vitest.config.ts` under `test.setupFiles`.
 
 ## Project structure
 
